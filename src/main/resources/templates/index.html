@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Tela Inicial </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="container">
+        <div class="masthead clearfix">
+          <div class="container inner">
+           <!-- <img class="masthead-brand" th:src="@{/image/ifms.png}" alt="logo" style="width:40px;"> -->
+            <nav>
+              <ul class="nav masthead-nav">
+                <li>
+                  <a class="nav-link" th:href="@{/student/}">Listar Estudantes</a>
+                </li>
+                <li>
+                  <a class="nav-link" th:href="@{/professor/listar}">Listar Professores</a>
+                </li>
+                <li>
+                  <a class="nav-link" th:href="@{/student/cadastrar}">Cadastrar Estudantes</a>
+                </li>
+                <li>
+                  <a class="nav-link" th:href="@{/professor/cadastrar}">Cadastrar Professores</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="inner cover">
+          <h1 class="cover-heading">Crud Spring</h1>
+          <p class="lead">Página Criada para a disciplina de Framework 1</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <footer class="bg-dark text-center text-lg-start fixed-bottom">
+    <div class="text-center p-3">
+      <p class="text-light bg-dark">© Desenvolvido por Aluno</p>
+    </div>
+  </footer>
+</body>
+
+</html>
